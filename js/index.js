@@ -39,17 +39,17 @@ let speed3 = 0;
 
 const  drawRedLine1 = () => {  speed1 +=1;
     ctx.fillRect (red1X,speed1,100,20);
-  ctx.fillStyle = "red";
+  ctx.fillStyle = "green";
     }
 
 function drawRedLine2 () { 
   speed2 +=2;
    ctx.fillRect (red2X,speed2,200,30);
-    ctx.fillStyle = "red";}
+    ctx.fillStyle = "purple";}
 
 function drawRedLine3 () {  speed3 +=1;
   ctx.fillRect (red3X,speed3,130,40);
-      ctx.fillStyle = "red";}
+      ctx.fillStyle = "pink";}
 
 window.onload = () => {
   document.getElementById("start-button").onclick = () => {
@@ -111,4 +111,5 @@ document.addEventListener("keyup", event =>  {
    isMovingLeft = false
    isMovingRight = false
  } )
+
 
